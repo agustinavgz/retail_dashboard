@@ -1,1 +1,5 @@
-# retail_dashboard
+# Sample Retail Dashboard
+
+```
+streamlit run app.py
+```
