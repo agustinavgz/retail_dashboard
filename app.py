@@ -32,6 +32,16 @@ payments_data = pd.read_csv('payments_dataset.csv')
 camera_data = pd.read_csv('camera_dataset.csv')
 
 with st.sidebar:
+    st.markdown(
+    f'''
+        <style>
+            .sidebar .sidebar-content {{
+                width: 200px;
+            }}
+        </style>
+    ''',
+    unsafe_allow_html=True
+    )
     st.title(':bar_chart: Retail Dashboard')
     
     year_list = list(payments_data.Year.unique())[::-1]
